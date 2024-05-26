@@ -11,7 +11,7 @@ COPY pip.conf /root/.pip/pip.conf
 RUN pip install torch torchvision torchaudio transformers matplotlib \
         flask tiktoken einops transformers_stream_generator accelerate
 
-COPY Qwen-VL-Chat /data/Qwen-VL-Chat
+COPY Qwen /data/Qwen
 COPY main.py /data/main.py
 
 WORKDIR /data
